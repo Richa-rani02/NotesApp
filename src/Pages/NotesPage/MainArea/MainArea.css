@@ -1,0 +1,6 @@
+.main-content{
+    height: 100vh;
+    transition: 0.5s;
+     padding:9rem 1rem;
+     margin: 0 var(--spacing-4);
+}

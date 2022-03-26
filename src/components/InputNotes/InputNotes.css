@@ -1,0 +1,89 @@
+.notesarea {
+  display: flex;
+  justify-content: center;
+  max-height: fit-content;
+  flex-wrap: wrap;
+}
+
+.input-form {
+  width: 50%;
+  flex-wrap: wrap;
+  background: var(--white);
+  padding: var(--spacing-1);
+  justify-self: center;
+  border-radius: var(--spacing-7x);
+  box-shadow: 0 var(--spacing-1x) var(--spacing-7x) rgb(128, 128, 128);
+}
+
+.input__pin {
+  padding: var(--spacing-8x) var(--spacing-1);
+  font-size: 1.8rem;
+}
+
+.input-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+
+}
+
+.input-form .input-textarea {
+  width: 100%;
+  border: none;
+  padding: var(--spacing-1x) var(--spacing-1);
+  outline: none;
+  font-size: 1.5rem;
+  resize: none;
+  max-height: 3rem;
+}
+
+.notesbtn {
+  padding: var(--spacing-4x);
+  border-top: var(--spacing-1x) solid rgba(95, 99, 104, 0.157);
+}
+
+.btn-left {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.btn-container {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.btn-container:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+.add {
+  border: none;
+  outline: none;
+  padding: var(--spacing-8x);
+  background-color: transparent;
+  border-radius: var(--spacing-7x);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.add:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+.label-container {
+  padding: var(--spacing-7x);
+  border: 1px solid black;
+  border-radius: var(--spacing-2);
+}
+

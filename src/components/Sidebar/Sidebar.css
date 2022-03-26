@@ -1,0 +1,37 @@
+.sidebar {
+    background:var(--primary-color);
+    margin-top: 8.1rem;
+    padding-top: var(--spacing-3);
+    position: fixed;
+    left: 0;
+    width: 25rem;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+  }
+
+  .sidebar .side-links{
+    color: var(--white);
+    display: block;
+    width: 100%;
+    line-height: 6rem;
+    text-decoration: none;
+    padding-left: var(--spacing-4);
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .side-links span{
+      color: var(--white);
+  }
+  
+  .sidebar .side-links:hover{
+    background:var(--secondary-light);
+  }
+  .sidebar .side-links span{
+      margin-left: var(--spacing-10x);
+      font-weight: 500;
+  }
+  label #sidebar_btn:hover{
+    color: var(--white);
+  }

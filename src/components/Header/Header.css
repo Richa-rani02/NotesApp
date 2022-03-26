@@ -1,0 +1,42 @@
+header{
+    position: fixed;
+    background-color: var(--white);
+    display: flex;
+    padding:var(--spacing-4) var(--spacing-2);
+    box-shadow: 0 0 var(--spacing-2x) 0 var(--shadow-color);
+    align-items: center;
+    width: 100%;
+    height: 7.3rem;
+    justify-content: space-between;
+  }
+
+  .hamburger-icon{
+      font-size: var(--spacing-2);
+      color: var(--text-light);
+  }
+  .left_area{
+    display: flex;
+    gap: var(--spacing-1);
+    align-items: center;
+  }
+  .left_area h3{
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .login_btn{
+    background-color: var(--primary-light);
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--spacing-2);
+    color: var(--white); 
+   text-decoration: none;
+  }
+
+  .login_btn:hover{
+    background-color: var(--primary-color);
+    box-shadow: var(--spacing-2x) var(--spacing-2x) var(--spacing-1-5) rgba(90,118,253,0.14);
+  }
+  
+

@@ -1,0 +1,20 @@
+#check:checked ~ .sidebar{
+    left: -19rem;
+  }
+  
+  #check:checked ~ .sidebar .side-links span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar .side-links{
+    font-size: 2rem;
+    margin-left: 17rem;
+    width: 8rem;
+  }
+  #check:checked ~ .content{
+    margin-left: 6rem;
+  }
+  
+  #check{
+    display: none;
+  }

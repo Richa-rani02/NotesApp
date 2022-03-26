@@ -1,0 +1,18 @@
+.color-pallete-grid {
+    background-color: var(--white);
+    display: grid;
+    position: absolute;
+    top: 81%;
+    left: 10%;
+    grid-template-columns: 27px 27px 27px 27px;
+    grid-template-rows: 27px 27px;
+    grid-gap: var(--spacing-5x);
+    padding: var(--spacing-5x);
+    z-index: 10;
+    border: 1px solid var(--grey-color);
+    display: none;
+  }
+  .color-pallete-grid .color-pallete{
+      border-radius: 50%;
+   
+  }

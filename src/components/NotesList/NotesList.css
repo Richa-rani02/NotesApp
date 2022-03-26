@@ -1,0 +1,149 @@
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.notes_list_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.Notes-container{
+  margin:var(--spacing-2) var(--spacing-1) ;
+  padding: var(--spacing-1);
+}
+
+.notes-card-wrapper{
+    width: 100%; 
+    min-height: 15rem; 
+    box-shadow: 0 var(--spacing-1x) var(--spacing-4x) rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--spacing-5x);
+    background-color: var(--white);
+    
+  }
+  
+  .card-top{
+    width: 100%;
+    height: 2%;
+  }
+  
+  .task-holder{
+    width: 100%;
+    height: 98%;
+    padding: var(--spacing-1);
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .note-card-label{
+    margin-bottom: var(--spacing-10x);
+    max-width: 8rem;
+    height: 3rem;
+    border-radius: var(--spacing-10x);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .modal-color{
+      background-color: yellow;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  /* .notesingle{
+      width: 100%;
+      background: var(--white);
+      padding: var(--spacing-1);
+      justify-self: center;
+      border-radius:var(--spacing-7x);
+      box-shadow: 0 var(--spacing-1x) var(--spacing-7x) rgb(128, 128, 128);
+    }
+  .input__pin{
+    padding: var(--spacing-8x) var(--spacing-1);
+    font-size: 1.8rem;
+  }  
+    form input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 1.5rem;
+     
+    }
+    form textarea {
+      width: 100%;
+      border: none;
+      padding: var(--spacing-1x) var(--spacing-1);
+      outline: none;
+      font-size: 1.5rem;
+      resize: none;
+      max-height: 2.5rem;
+    }
+    .notesbtn{
+    padding : var(--spacing-4x);
+    border-top: var(--spacing-1x) solid rgba(95, 99, 104, 0.157);
+    }
+    .btn-left{
+     display: flex;
+     gap: 1.5rem;
+     font-size: 2rem;
+    }
+   
+    .btn-container{
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border-radius: 50%;
+    }
+    .btn-container:hover{
+      background-color: rgba(95, 99, 104, 0.157);
+    }
+  
+    .add{
+       border: none;
+       outline: none;
+       padding: var(--spacing-8x);
+       background-color: transparent;
+       border-radius: var(--spacing-7x);
+       font-family: 'Raleway', sans-serif;
+       font-weight: 500;
+       font-size: 1.5rem;
+    }
+  
+    .add:hover{
+      background-color: rgba(95, 99, 104, 0.157);
+    } */
