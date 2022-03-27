@@ -5,10 +5,8 @@
     box-shadow: var(--box-shadow);
     padding:2rem;
     background: var(--white);
-    /* text-align: center; */
     border: 1px solid var(--grey-color);
     height: 100vh;
-    overflow: scroll;
 }
 
  .login-form.active{

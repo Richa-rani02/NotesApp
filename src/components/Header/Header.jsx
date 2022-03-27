@@ -15,13 +15,12 @@ export const Header = () => {
           <GiHamburgerMenu className="hamburger-icon" />
         </label>
         <div>
-          <h3>NOTELY</h3>
+          <h3>PALETTE</h3>
         </div>
       </div>
 
       <Search />
       <div className="right_area">
-      {/* <a href="#" className="login_btn" onClick={() => setactive(prev => !prev)}>Login</a> */}
        {token?<a href="#" className="login_btn" onClick={() => setactive(prev => !prev)}>Logout</a>:<a href="#" className="login_btn" onClick={() => setactive(prev => !prev)}>Login</a> } 
       </div>
       < LoginPanel active={active} setactive={setactive} />

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export const NotesPage=()=>{
     return(
         <>
-        <input type="checkbox" id="check"></input>
+        <input type="checkbox" id="check"/>
         <Header/>
         <Sidebar/>
         <MainArea/>

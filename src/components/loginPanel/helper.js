@@ -10,19 +10,19 @@ export const initialFormValues = {
   export const validateInput=(values)=>{
     const errors = {};
 
-    const passRegex =
+    const PASS_REGEX =
       /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,10}$/;
-    const emailRegex = /^\S+@\S+\.\S+$/;
+    const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 
     if(!values.email){
       errors.email = "Email is required!!";
-    }else if (!emailRegex.test(values.email)) {
+    }else if (!EMAIL_REGEX.test(values.email)) {
       errors.email = "Enter a valid emailId!!";
     }
 
     if (!values.password) {
       errors.password = "Password is required!!";
-    }else if (!passRegex.test(values.password.trim())) {
+    }else if (!PASS_REGEX.test(values.password.trim())) {
       errors.password =
         "Password should be 6-10 characters and include at least 1 letter, 1 number and 1 special character!";
     }
