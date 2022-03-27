@@ -28,7 +28,7 @@ export const Note=()=>{
      <div class = "notes-card-wrapper">
             <div class = "card-top" style={{"background-color": "pink"}}></div>
             <div class = "task-holder">
-                <span class = "note-card-label top-gutter-sm" style={{"background-color": "var(--accent-color)"}}> label
+                <span class = "note-card-label top-gutter-sm" style={{"backgroundColor": "var(--accent-color)"}}> label
                 </span>
                 <h4 className="note-card-title">title</h4>
                 <p className = "note-card-desc top-gutter-sm"style={{"background-color": ""}}>
@@ -39,7 +39,6 @@ export const Note=()=>{
                     <i class="fas fa-trash-alt" style = {{"color" : colors.primaryColor, "cursor" : "pointer"}} onClick = ""></i>
                 </div>
         </div>
-        {/* <EditTask modal = {modal} toggle = {toggle} updateTask = {updateTask} taskObj = {taskObj}/> */}
         </div>
     )
 }

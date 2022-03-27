@@ -16,7 +16,8 @@ padding: var(--spacing-1) var(--spacing-4);
 
 }
 .home-details h1{
-    color:var(--text-heading)
+    color:var(--text-heading);
+    font-family: 'AlexBrush', cursive;
 }
 .home-details p{
     line-height: 2rem;
@@ -27,11 +28,11 @@ padding: var(--spacing-1) var(--spacing-4);
     height: 100%;
 }
 .home-btn{
-    width: 10rem;
-    height: 4rem;
-    text-align: center;
     text-decoration: none;
     background-color: var(--primary-color);
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: var(--spacing-5x);
 }

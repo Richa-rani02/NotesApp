@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+
 html, body {
     height: 100%;
 }
@@ -26,7 +30,7 @@ body {
    --grey-color-dark:rgb(128, 128, 128,0.8);
     --secondary-color:rgb(255, 218, 185);
     --secondary-light:rgb(255, 218, 185,0.9);
-    --accent-color:#F88379;
+    --accent-color:#6E0D25;
     --text-heading:#002244;
     --text-primary-color:black;
     --white: #ffffff;
