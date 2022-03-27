@@ -1,7 +1,6 @@
 export const initialFormValues = {
     email: "",
     password: "",
-    confirmPassword: "",
   };
   export const testLogin = {
     email: "test@gmail.com",
@@ -26,10 +25,6 @@ export const initialFormValues = {
     }else if (!passRegex.test(values.password.trim())) {
       errors.password =
         "Password should be 6-10 characters and include at least 1 letter, 1 number and 1 special character!";
-    }
-
-    if (!values.confirmPassword || values.confirmPassword !== values.password) {
-      errors.confirmPassword = "Passwords do not match !!";
     }
 
     return errors;

@@ -2,9 +2,14 @@ import "./loginPanel.css";
 import { initialFormValues, validateInput, testLogin } from "./helper";
 import { InputField } from "../InputField/InputField";
 import { useState } from "react";
-export const LoginPanel = ({ active }) => {
+import { loginToServer } from "../../utils/authUtils/getDatafromServer";
+import { useAuth } from "../../context/auth-context";
+import { toast} from 'react-toastify';
+
+export const LoginPanel = ({ active,setactive }) => {
     const [formValues, setFormValues] = useState({ ...initialFormValues });
     const [errors, setErrors] = useState({});
+    const {authDispatch}=useAuth();
     const inputs = [
         {
             id: 1,
@@ -32,16 +37,27 @@ export const LoginPanel = ({ active }) => {
     }
     const loginWithTest = (e) => {
         e.preventDefault();
-        console.log("test");
-        console.log(testLogin);
-
         setFormValues(testLogin);
-        console.log(formValues);
+        loginToServer(
+            testLogin,
+            authDispatch,toast
+        );
+        setFormValues(initialFormValues);
+        setactive(!active);
     }
+
     const loginHandler = (e) => {
         e.preventDefault();
         const err = validateInput(formValues);
         setErrors(err);
+        if(Object.keys(err).length === 0){
+            loginToServer(
+                formValues,
+                authDispatch,toast
+            );
+            setFormValues(initialFormValues);
+            setactive(!active);
+        }
     }
 
     return (

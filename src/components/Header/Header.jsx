@@ -1,36 +1,31 @@
 import "./Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import {Search} from "../searchbar/Search";
+import { Search } from "../searchbar/Search";
 import { LoginPanel } from "../loginPanel/LoginPanel";
+import { useAuth } from "../../context/auth-context";
 export const Header = () => {
-    const [active,setactive]=useState(false);
-    const [formvalues, setFormValues] = useState({
-        email: "",
-        password: "",
-        confirmPassword: ""
-      });
-    return (
-      <header>
-        <div className="left_area">
-        <label for="check">
-      <GiHamburgerMenu className="hamburger-icon"/>
-      </label>
-      <div>
-      {/* <img className="logo"
-          src="https://res.cloudinary.com/dgomw715r/image/upload/v1648184197/ProjectImages/noteslogo_qenwcd.png"
-          alt="logo"
-        /> */}
-        <h3>NOTELY</h3>
-      </div>
-        </div>
+  const [active, setactive] = useState(false);
+  const{authState:{token}}=useAuth();
 
-            <Search/>
-      <div className="right_area">
-        <a href="#" className="login_btn" onClick={()=>setactive(prev=>!prev)}>Login</a>
+  return (
+    <header>
+      <div className="left_area">
+        <label for="check">
+          <GiHamburgerMenu className="hamburger-icon" />
+        </label>
+        <div>
+          <h3>NOTELY</h3>
+        </div>
       </div>
-       < LoginPanel active={active} />
+
+      <Search />
+      <div className="right_area">
+      {/* <a href="#" className="login_btn" onClick={() => setactive(prev => !prev)}>Login</a> */}
+       {token?<a href="#" className="login_btn" onClick={() => setactive(prev => !prev)}>Logout</a>:<a href="#" className="login_btn" onClick={() => setactive(prev => !prev)}>Login</a> } 
+      </div>
+      < LoginPanel active={active} setactive={setactive} />
     </header>
-       
-    )
+
+  )
 }
