@@ -1,0 +1,47 @@
+.input-form-login{
+    display: flex;
+    width: 100%;
+}
+.input-box{
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid var(--grey-color-dark);
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+}
+.input-form-label{
+    font-size: 1.4rem;
+    color: var(--grey-color-dark);
+  }
+  
+  .input-form-login  span {
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+  }
+  
+  .login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var( --text-light);
+}
+
+ .login-form p a{
+    color:var(--accent-color);
+    text-decoration: underline;
+}
+
+ .btn{
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: var(--spacing-2);
+    display: block;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+  

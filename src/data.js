@@ -9,3 +9,4 @@ export const colorsData = [
     "#000000",
 
   ];
+
